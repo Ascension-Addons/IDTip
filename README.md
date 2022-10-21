@@ -1,3 +1,3 @@
-# Addon Name
+# IdTip
 
-This is the repository for <Addon Name>. Modified for Ascension.gg. 
+This is the repository for IdTip. Modified for Ascension.gg. 
