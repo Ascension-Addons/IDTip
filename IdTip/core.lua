@@ -110,8 +110,8 @@ end)
 GameTooltip:HookScript("OnTooltipSetUnit", function(self)
   local unit = select(2, self:GetUnit())
   if unit then
-    local id = tonumber((UnitGUID(unit)):sub(-10, -7), 16)
-    if id > 0 then addLine(GameTooltip, id, types.unit) end
+    local id = GetCreatureIDFromUnit(unit)
+    if id and id > 0 then addLine(GameTooltip, id, types.unit) end
   end
 end)
 
