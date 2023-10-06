@@ -109,7 +109,7 @@ end)
 -- NPCs
 GameTooltip:HookScript("OnTooltipSetUnit", function(self)
   local unit = select(2, self:GetUnit())
-  if unit then
+  if unit and not UnitIsPlayer(unit) then
     local id = GetCreatureIDFromUnit(unit)
     if id and id > 0 then addLine(GameTooltip, id, types.unit) end
   end
